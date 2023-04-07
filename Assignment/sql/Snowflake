@@ -1,0 +1,63 @@
+CREATE or REPLACE TABLE SV_SALES_DATA(
+order_id VARCHAR(30),
+order_date string,
+ship_date string,
+ship_mode VARCHAR(40),
+customer_name VARCHAR(40),
+segment VARCHAR(40),
+state VARCHAR(40),
+country VARCHAR(40),
+market VARCHAR(40),
+region VARCHAR(40),
+product_id VARCHAR(40),
+category VARCHAR(40),
+sub_category VARCHAR(40),
+product_name VARCHAR,
+sales VARCHAR,
+quantity VARCHAR,
+discount DECIMAL(10,5),
+profit DECIMAL(10,5),
+shipping_cost NUMERIC(10,4),
+order_priority VARCHAR(20),
+year VARCHAR,
+PRIMARY KEY(order_date)
+);
+
+ALTER TABLE SV_SALES_DATA
+DROP PRIMARY KEY;
+
+ALTER TABLE SV_SALES_DATA
+ADD CONSTRAINT PK_CONSTR PRIMARY KEY(order_id);
+
+------order_date string,ship_date string
+
+SELECT SUBSTRING(order_id,9,4) AS order_extract
+FROM SV_SALES_DATA;
+
+
+SELECT order_id,
+   CASE
+     WHEN discount > 0 THEN 'YES'
+     ELSE 'NO'
+   END AS Discount_Flag
+FROM SV_SALES_DATA;
+ 
+SELECT Order_id, DATEDIFF('DAY',order_date,ship_date) AS PROCESS_DAYS
+FROM SV_SALES_DATA;
+
+
+CREATE VIEW SV_SALES_DATA_VIEW AS
+SELECT order_id, (SELECT DATEDIFF('DAY',order_date,ship_date)) AS PROCESS_DAYS
+FROM SV_SALES_DATA;
+
+SELECT * FROM SV_SALES_DATA_VIEW;
+        
+SELECT *,
+  CASE
+     WHEN PROCESS_DAYS <=3 THEN '5'
+     WHEN PROCESS_DAYS >3 AND PROCESS_DAYS <= '6' THEN '4'
+     WHEN PROCESS_DAYS >6 AND PROCESS_DAYS <='10' THEN '3'
+     ELSE '2'
+  END AS Rating
+FROM SV_SALES_DATA_VIEW;
+                                              

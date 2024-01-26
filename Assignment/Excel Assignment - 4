@@ -2,5 +2,22 @@
   To insert Alt + H + I 
   To delete Alt + H + D
 
-2. If you set a row height or column width to 0 (zero), what happens to the row and
-column?
+2. If you set a row height or column width to 0 (zero), what happens to the row and column?
+  It hides that cell
+
+3. Is there a need to change the height and width in a cell? Why?
+  When entering information in a table, then some rows and columns are not large enough to properly display the information they contain,
+  then it is necessary to change the width and height of table.
+
+4. What is the keyboard shortcut to unhide rows?
+  Ctrl + 9
+
+5. How to hide rows containing blank cells?
+  First select the blank cells using Home > Find & replace > Go to special > blanks.
+  Then, Ctrl + 9
+
+6. What are the steps to hide the duplicate values using conditional formatting in excel?
+  First select the column where duplicate values are present.
+  Then, Home > Conditional formatting > Highlight cell rules > Duplicate values.
+  Then, Filter the column then Filter by colour and give no fills.
+  

@@ -1,0 +1,30 @@
+1. What does the dollar($) sign do?
+  Dollar($) is used to give instruction how the cell reference is to be taken. $ is used for absolute reference. For example,
+  $A$1 - means the reference cell will remain column A and row 1 for all the reference.
+
+2. How to Change the Reference from Relative to Absolute (or Mixed)?
+  In order to change the reference from relative to absolute we just have to add $ before the absolute cell, so it will become
+  absolute reference. For E.g., $A$1 * $B$1, so here all the cell where the formula is dragged same value will be reflecting.
+  For mixed reference, the $ is to be added for which cell is to be static. For E.g., $A$1*B1, here for all the cell A2 will be 
+  one value and the other value will change in B column like B1, B2, B3.
+
+3. Explain the order of operations in excel?
+  Order of operation as follows - Parentheses> Exponents> Multiplication and Division> Addition and Subtraction
+
+4. What, according to you, are the top 5 functions in excel and write a basic syntax
+for any of two?
+  There are lot of useful functions in excel. Top 5 would be Vlookup, Sum, Count, Remove duplicates and IF.
+  Syntax for Vlookup would be = vlookup(lookup value, range where the lookup value, lookup column, exact or approx match)
+  Syntax for IF function is = IF(condition, value if true, value if false)
+
+5. When would you use the subtotal function?
+   It is used when subtotals are to be ignored in the spreadsheet when we are calculating grand total. We can also use when 
+    we need to ignore any numbers that have been hidden, dynamically summarize data, and sum filtered values.
+
+6. What is the syntax of the vlookup function? Explain the terms in it?
+  Syntax for Vlookup would be = vlookup(lookup value, range where the lookup value, lookup column, exact or approx match)
+   where 
+    lookup value - which value that need to be looked up
+    range where the lookup value - range of cells where the value is present
+    lookup column - column number in the range that contains the return value
+    exact or approx match - want exact match or approx match , where default will be approx match

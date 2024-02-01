@@ -15,4 +15,20 @@
 
 3. On the ribbon, make a new tab. Add some different groups, insert commands in the groups and name them according to 
 their commands added. Copy and paste the screenshot of the steps you followed.
+  Added image in readme.me
+
+4. Make a list of different shortcut keys that are only connected to formatting with their functions.
+  CONTROL + B: Applies bold font formatting to headers
+  ALT + H + B + A: Applies borders to the cells
+  ALT + H + B + T: Gives an outline border to the dataset
+  ALT + H + O + W: Autofits column widths
+  CONTROL + 1: Opens Format Cells dialog box
+
+5. What distinguishes Excel from other analytical tools?
+  Excel the interface is very easy to study and basic operations can be done with basic knowledge unlike other tolls where 
+technical knowledge is required to operate basic functions. It is user friendly and analytics can be done and visualization can
+be done.
+
+6. Create a table and add a custom header and footer to your table.
+  
   

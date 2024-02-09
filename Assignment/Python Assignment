@@ -1,0 +1,48 @@
+1. In the below elements which of them are values or an expression? eg:- values can be
+integer or string and expressions will be mathematical operators.
+*              - Expression
+'hello'        - Expression
+-87.8          - Value
+-              - Expression
+/              - Expression
++              - Expression
+6              - Value
+
+
+2. What is the difference between string and variable?
+  A Variable is a store of information, and a String is a type of information you would store in a Variable. 
+  A String is usually words, enclosed with ".
+
+3. Describe three different data types.
+  Numberic Data type : It is used to store values that are numbers or numberic in nature. E.g., int, float
+  String Data type : It is used to store values that are strings whicha are enclosed with double quotes("). E.g., 
+  List Data type : It is used to store a list values like array. It stores list of values which are represented by indexes
+
+4. What is an expression made up of? What do all expressions do?
+  Expression are a combination of values, variables, and operators that the interpreter can evaluate to a single value.
+
+5. This assignment statements, like spam = 10. What is the difference between an expression and a statement?
+  A statement in Python is used for creating variables or for displaying values. The expression in Python produces some value or result after being
+  interpreted by the Python interpreter.
+
+6. After running the following code, what does the variable bacon contain?
+bacon = 22
+bacon + 1
+
+23
+
+7. What should the values of the following two terms be?
+'spam' + 'spamspam' --- spamspamspam
+'spam' * 3  --- spamspamspam
+
+8. Why is eggs a valid variable name while 100 is invalid?
+  While eggs is a string 100 is a value. A variable cannot be value in itself. So , eggs is valid variable while 100 is not
+
+9. What three functions can be used to get the integer, floating-point number, or string
+version of a value?
+   add int , float and str should be used to get a integer, floating-point number , string respectively.
+
+10. Why does this expression cause an error? How can you fix it?
+'I have eaten' + 99 + 'burritos.'
+
+In this expression it has numerical and string together. Adding a single quote(') to 99 will solve the error. '99'

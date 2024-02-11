@@ -1,0 +1,63 @@
+1. What exactly is []?
+  The empty list value, which is a list value that contains no items.
+
+2. In a list of values stored in a variable called spam, how would you assign the value 'hello' as the
+third value? (Assume [2, 4, 6, 8, 10] are in spam.)
+  spam[2] = 'hello'
+
+3. What is the value of spam[int(int('3' * 2) / 11)]?
+  spam = ['a', 'b', 'c', 'd']
+  spam[int(int('3' * 2) / 11)]
+  'd'
+
+4. What is the value of spam[-1]?
+  'd'
+
+5. What is the value of spam[:2]?
+  ['a', 'b']
+
+6. What is the value of bacon.index('cat')?
+  bacon.index('cat')
+  1
+
+7. How does bacon.append(99) change the look of the list value in bacon?
+  [3.14, 'cat', 11, 'cat', True, 99]
+
+8. How does bacon.remove('cat') change the look of the list in bacon?
+  [3.14, 11, 'cat', True, 99]
+
+9. What are the list concatenation and list replication operators?
+  The operator for list concatenation is +, while the operator for replication is *.
+
+10. What is difference between the list methods append() and insert()?
+  While append() will add values only to the end of a list, insert() can add them anywhere in the list.
+
+11. What are the two methods for removing items from a list?
+  The del statement and the remove() list method are two ways to remove values from a list.
+
+12. Describe how list values and string values are identical.
+  Both lists and strings can be passed to len(), have indexes and slices, be used in for loops, be concatenated or
+  replicated, and be used with the in and not in operators.
+
+13. What's the difference between tuples and lists?
+  Lists are mutable; they can have values added, removed, or changed. Tuples are immutable; they cannot be changed at all. 
+  Also, tuples are written using parentheses, ( and ), while lists use the square brackets, [ and ].
+
+14. How do you type a tuple value that only contains the integer 42?
+  (42)
+
+15. How do you get a list value's tuple form? How do you get a tuple value's list form?
+  The tuple() and list() functions, respectively
+
+16. Variables that &quot;contain&quot; list values are not necessarily lists themselves. Instead, what do they
+contain?
+  They contain references to list values.
+
+17. How do you distinguish between copy.copy() and copy.deepcopy()?
+  The copy.copy() function will do a shallow copy of a list, while the copy.deepcopy() function will do a deep copy of a list. 
+  That is, only copy.deepcopy() will duplicate any lists inside the list.
+
+
+
+
+

@@ -48,7 +48,7 @@ Correct code should be
 spam = 0
 if spam == 10:
    print('eggs')
-if spam > 5:
+elif spam > 5:
    print('bacon')
 else:
    print('ham')
@@ -61,7 +61,7 @@ Greetings! if anything else is stored in spam.
 spam = int(input("Enter spam number")) 
 if spam == 1:
    print('Hello')
-if spam == 2:
+elif spam == 2:
    print('Howdy')
 else:
    print('Greetings')

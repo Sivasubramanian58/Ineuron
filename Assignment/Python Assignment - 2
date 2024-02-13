@@ -36,7 +36,7 @@ condition and when you would use one.
 spam = 0
 if spam == 10:
 print('eggs')
-if spam > 5:
+elif spam > 5:
 print('bacon')
 else:
 print('ham')
